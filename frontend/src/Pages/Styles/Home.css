@@ -1,0 +1,25 @@
+/* Reset default margins and padding */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    position: relative; /* Contain absolute-positioned sidebar */
+    height: calc(100vh - 40px); /* Subtract header height */
+  }
+  
+  .body-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-left: 60px; /* Matches sidebar's initial width */
+    width: calc(100% - 60px); /* Ensures body takes remaining space */
+    height: 100%; /* Fill available space */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+    margin-top: 0; /* Remove any default margin */
+  }
